@@ -13,7 +13,7 @@
             padding: 0;
         }
         .container {
-            width: 80%;
+            max-width: 800px;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -55,6 +55,22 @@
             text-align: left;
             padding-left: 10px;
         }
+        @media (max-width: 767px) {
+            .container {
+                width: 90%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            section h2 {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -65,10 +81,8 @@
         </header>
         <section class="contact-info">
             <h2>Contact Information</h2>
-            <p>Email: aman@gmail.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
-            <p>GitHub: <a href="https://github.com/johndoe">github.com/johndoe</a></p>
+            <p>Email: ak9102848@gmail.com</p>
+            <p>Phone: 8750725639</p>
         </section>
         <section class="skills">
             <h2>Skills</h2>
@@ -94,7 +108,7 @@
         <section class="projects">
             <h2>Projects</h2>
             <div class="card-deck">
-                <div class="card">
+                <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Project 1</h5>
                         <p class="card-text">Description of the project and the technologies used.</p>
@@ -103,7 +117,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Project 2</h5>
                         <p class="card-text">Description of the project and the technologies used.</p>
@@ -112,7 +126,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Project 3</h5>
                         <p class="card-text">Description of the project and the technologies used.</p>
@@ -124,25 +138,25 @@
             </div>
         </section>
         <section class="education">
-            <h2>education</h2>
+            <h2>Education</h2>
             <table class="table">
                 <thead>
                     <tr>
-                        <th>CBSE</th>
-                        <th>12th</th>
-                        <th>2023</th>
+                        <th>Board</th>
+                        <th>Degree</th>
+                        <th>Year</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Noida institute of Engineering and technology</td>
-                        <td>B.tech in Biotechnology</td>
+                        <td>CBSE</td>
+                        <td>12th</td>
                         <td>2023</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Noida Institute of Engineering and Technology</td>
+                        <td>B.Tech in Biotechnology</td>
+                        <td>2023</td>
                     </tr>
                 </tbody>
             </table>
@@ -160,7 +174,42 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Detailed description of Project 1, including technologies used, challenges faced, and outcomes.
+                    <h2>Project Title: E-commerce Website for Selling Auto Rickshaws</h2>
+                    <h3>Description:</h3>
+                    <p>This project involves creating an e-commerce platform specifically designed to sell various models of auto rickshaws. The website allows users to browse through different products, add them to their cart, and view their cart's total price. The website is designed with a clean and user-friendly interface to enhance the shopping experience.</p>
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>HTML: For the basic structure of the website.</li>
+                        <li>CSS: For styling the website, including layout, colors, fonts, and responsiveness.</li>
+                        <li>JavaScript: For adding interactivity to the website, such as managing the shopping cart and updating the total price dynamically.</li>
+                        <li>Bootstrap: For responsive design and pre-styled components, such as the navigation bar and buttons.</li>
+                        <li>Images and Assets: Various images for the auto rickshaw products, sourced from the internet.</li>
+                    </ul>
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Responsive Navigation Bar: Includes links to different sections and buttons for sign-in and sign-up.</li>
+                        <li>Product Listings: Each product is displayed with an image, name, price, and an 'Add to Cart' button.</li>
+                        <li>Shopping Cart: Users can add products to the cart, view the items in the cart, and see the total price.</li>
+                        <li>Dynamic Updates: The cart and total price are updated dynamically as users add or remove items.</li>
+                    </ul>
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Responsive Design: Ensuring the website is fully responsive across different devices and screen sizes was a significant challenge. This involved extensive use of CSS media queries and Bootstrap's grid system.</li>
+                        <li>Dynamic Cart Management: Implementing a dynamic cart that updates in real-time as users add or remove items required careful management of JavaScript event listeners and DOM manipulation.</li>
+                        <li>User Experience: Creating a seamless and intuitive user experience was challenging. This involved optimizing the layout, ensuring quick load times, and making the website easy to navigate.</li>
+                    </ul>
+                    <h3>Outcomes:</h3>
+                    <ul>
+                        <li>Functional E-commerce Platform: Successfully developed a functional e-commerce website that meets the project's requirements.</li>
+                        <li>Improved Skills: Gained hands-on experience with web development technologies, particularly in responsive design and JavaScript.</li>
+                        <li>User Feedback: Received positive feedback on the website's design and usability, with users appreciating the clean interface and easy navigation.</li>
+                    </ul>
+                    <h3>Future Improvements:</h3>
+                    <ul>
+                        <li>Add Payment Gateway: Integrate a payment gateway to allow users to make purchases directly on the website.</li>
+                        <li>User Accounts: Implement a user account system where users can sign up, log in, and view their purchase history.</li>
+                        <li>Product Filtering: Add functionality to filter products by category, price range, and other criteria to enhance the shopping experience.</li>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -180,7 +229,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Detailed description of Project 2, including technologies used, challenges faced, and outcomes.
+                    <h3>Title: Blogging Website</h3>
+                    <p>Description: Developed a personal blogging website to share articles and posts. Used HTML, CSS, and JavaScript for the front end and a content management system for the backend.</p>
+                    <p>Technologies Used: HTML, CSS, JavaScript, CMS</p>
+                    <a href="https://ak9102848.github.io/-blog-.github.io/" target="_blank">Visit Blog</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -200,6 +252,19 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Detailed description of Project 3, including technologies used, challenges faced, and outcomes.
+                    <h3>Title: Portfolio Website</h3>
+                    <p>Description: Created a personal portfolio website to showcase my projects and skills. Utilized HTML, CSS, and Bootstrap for a responsive design.</p>
+                    <p>Technologies Used: HTML, CSS, Bootstrap</p>
                 </div>
-                <div class="modal
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
